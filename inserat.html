@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepTinder - Mein Inserat</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="flex">
+
+        <div class="container-header-inserate" id="logo-container">
+
+            <img id="logo-index" width="200px" src="/img/reptinderr.png" alt="Sorry! No Chameleon for you!"> <br> 
+
+
+        </div>
+
+        <div class="container-header-inserate">
+           
+         
+
+        </div>
+
+        <nav class="container-header-inserate">
+
+            <div id="personal-neuesInserat">
+
+
+                <a href="../">
+
+                    <button id="neuesInserat"> Alle Inserate</button>
+                    
+                </a>
+
+                <button id="logout" onclick="logout()"> Logout </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div id="mein-inserat">
+
+
+            <div id="form-inserat"">
+
+                <h2>Mein Inserat </h2>
+
+                <p id="infoText"> </p>
+
+
+                <label for="titel">Titel des Inserats:</label> <br>
+                <input id="titel" type="text" value=""> <br>
+
+                <label for="adresse">Deine Adresse:</label> <br>
+                <input id="adresse" type="text" value=""> <br>
+
+                <label for="bild">Füge hier den URL Link zum gewünschten Bild ein:</label> <br>
+                <input id="bild" type="text" value=""> <br>
+                <img id="bild-vorschau" width="300px" src="" alt=""> <br> 
+
+                <label for="beschreibung">Beschreibung (Wonach suchst du?/ Was bietest du an?):</label> <br>
+                <textarea id="beschreibung" name="beschreibung"> </textarea> <br> <br>
+
+                <label for="stadt">Nächste Stadt:</label> <br>
+                <select class="dropdown" name="stadt" id="stadt">
+                    <option value="1">Chur</option>
+                    <option value="2">Bern</option>
+                    <option value="3">Zürich</option>
+                    <option value="4">Basel</option>
+                    <option value="5">St.Gallen</option>
+                    <option value="6">Genf</option>
+                    <option value="7">Lugano</option>
+                    <option value="8">Luzern</option>
+                    <option value="9">Zug</option>
+                    <option value="10">Lausanne</option>
+                    <option value="11">Freiburg</option>
+                    <option value="12">Solothurn</option>
+                    <option value="13">Neuchâtel</option>
+                    <option value="14">Winterthur</option>
+                    <option value="15">Schaffhausen</option>
+                </select> <br> <br>
+
+                <div id="hashtags-container">
+
+                    <label for="hashtags">Wähle passende Hashtags:</label> <br>
+
+                    <div id="hashtags" class="flex-hasthags">
+
+                    </div>
+
+                </div>
+
+
+                <p>Status</p>
+
+                <div id="input-status">
+
+                <input type="radio" id="status-frei" name="status" value="1">
+                <label for="status-frei">Inserat aktiv</label><br>
+
+                <input type="radio" id="status-besetzt" name="status" value="0">
+                <label for="status-besetzt">Inserat zurzeit inaktiv</label><br>
+
+                </div>
+
+                <button class="hidden" id="button-neue" onclick="neuesInserat()">Veröffentlichen</button>
+                <button class="hidden" id="button-aktualisieren" onclick="aktualisiereInserat()">Aktualisieren</button>
+                <button class="hidden" id="button-loeschen" onclick="loescheInserat()">Löschen</button>
+
+                <p id="nachricht"> </p>
+
+            </div>
+
+            <!-- <script src="js/main.js"></script> -->
+            <script src="js/inserat.js"></script>
+
+    </div>
+
+</body>
+
+</html>
